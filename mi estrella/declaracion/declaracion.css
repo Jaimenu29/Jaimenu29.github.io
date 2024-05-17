@@ -1,0 +1,76 @@
+ 
+  h1 {
+    color: white;
+    background-color: transparent; /* Sin fondo */
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+p {
+    color: white;
+    background-color: transparent; 
+}
+  
+  body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 500px;
+    margin: 20px;
+    background-color: transparent;
+    position: fixed; /* Agregar posición fija */
+}
+
+  .container .tenor-gif-embed {
+    max-width: 200px;
+  }
+  
+  .container .btn {
+    display: flex;
+    gap: 25px;
+    background: transparent;
+  }
+
+
+  .btn a {
+    text-decoration: none;
+    color: #ffffff;
+    background: transparent;
+    padding: 10px 25px;
+    border-radius: 8px;
+    box-shadow: 0.5rem 1rem 3rem hsla(0, 0%, 0%, 0.3);
+    cursor: pointer; 
+}
+
+@media (max-width: 768px) {
+  .container {
+      max-width: 90%;
+      position: relative; /* Ajustar posición para móviles */
+  }
+
+  .btn a {
+      padding: 8px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+      gap: 15px;
+  }
+
+  .btn a {
+      padding: 6px 15px;
+      font-size: 14px;
+  }
+}

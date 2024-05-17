@@ -1,0 +1,11 @@
+body,.container{
+    background-color:#fcf8ff;
+    overflow:hidden;
+}
+
+#field
+{
+    width: 100vw; /* Ancho igual al ancho de la ventana */
+    height: 100vh; /* Alto igual al alto de la ventana */
+    position: fixed;
+}
